@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div>
+        <h1>Formulario de MÚSICA</h1>
+        <p>Por favor complete todos los campos</p>
+
+        <form action="#" method="POST" id="registroForm">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Bruno Moricca" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 11 1234-5678">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: brunito@correo.com" required>
+                </div>
+                <div>
+                    <label for="edad">edad *</label>
+                    <input type="edad" id="edad" name="edad" placeholder="Ej: 15 años" required>
+                </div>
+                 <div>
+                    <label for="DNI">DNI</label>
+                    <input type="DNI" id="DNI" name="DNI" placeholder="Ej: 49960034">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gustos musicales</legend>
+                <div>
+                    <label for="tipo de música ">¿Qué tipos de música te gustan? </label>
+                    <select id="tipo de música " name="tipo de música " required>
+                        <option value="">tipos...</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Reggaetón">Reggaetón</option>
+                        <option value="Electrónica">Electrónica</option>
+                        <option value="otra">otra</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Cuál es tu género musical favorito para escuchar a diario?</label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="géneros" value="Música clásica">
+                            Música clásica
+                        </label>
+                        <label>
+                            <input type="checkbox" name="géneros" value="Pop">
+                            Pop
+                        </label>
+                        <label>
+                            <input type="checkbox" name="géneros" value="Reggaetón">
+                           Reggaetón
+                        </label>
+                        <label>
+                            <input type="checkbox" name="géneros" value="Trap">
+                            Trap
+                        </label>
+                        <label>
+                            <input type="checkbox" name="géneros" value="Rock">
+                          Rock
+                        </label>
+                    </div>
+                </div>
+                 <div>
+                    <label for="comentarios">¿Cuál es tu cantante favorito y por qué?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cuál es tu cantante favorito..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <div>
+                    <label for="comentarios">¿Cuál es tu grupo/banda musical favorito?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cuál es tu grupo/banda favorita/to..."></textarea>
+                </div>
+                <div>
+                    <label for="horas">¿Cuánto tiempo escuchás música por día? *</label>
+                    <select id="horas" name="horas" required>
+                        <option value="">Selecciona la cantidad de horas...</option>
+                        <option value="Menos de 1 hora">Menos de 1 hora</option>
+                        <option value="1–2 horas">1–2 horas</option>
+                        <option value="2–4 horas">2–4 horas</option>
+                        <option value="Más de 4 horas">Más de 4 horas</option>
+                    </select>
+                </div>
+                 <div>
+                    <label>¿Cuándo escuchás música normalmente?</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="tiempo" value="Mientras estudio">
+                            Mientras estudio
+                        </label>
+                        <label>
+                            <input type="radio" name="tiempo" value="Mientras viajo">
+                           Mientras viajo
+                        </label>
+                        <label>
+                            <input type="radio" name="tiempo" value="Antes de dormir">
+                            Antes de dormir
+                        </label>
+                         <label>
+                            <input type="radio" name="tiempo" value="Cuando hago ejercicio">
+                            Cuando hago ejercicio
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label for="comentarios">¿Qué canción estás escuchando últimamente?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cuál es tu canción del momento..."></textarea>
+                </div>
+                <div>
+                    <label>¿La música influye en tu estado de ánimo?</label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="importancia" value="si">
+                            si
+                        </label>
+                        <label>
+                            <input type="checkbox" name="importancia" value="a veces">
+                           a veces
+                        </label>
+                        <label>
+                            <input type="checkbox" name="importancia" value="no">
+                           no
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label>
+                        <input type="checkbox" name="terminos" required>
+                        Acepto los <a href="#">términos y condiciones</a> *
+                    </label>
+                </div>
+            </fieldset>
+            
+            <div>
+                <button type="submit">Registrarse</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+        </form>
+    </div>   
+</body>
+</html>
